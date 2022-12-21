@@ -1,13 +1,14 @@
 package introducao;
 
 import java.util.Locale;
+import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-System.out.println("Hello Word");
+		System.out.println("Hello Word");
 		
 		int y = 32;
 		System.out.println(y);
@@ -64,8 +65,28 @@ System.out.println("Hello Word");
 		Locale.setDefault(Locale.US);
 		System.out.printf("US Decimal point: %.3f", measure);
 		
+		Scanner sc = new Scanner(System.in);
+		
+		String xx;
+		xx = sc.next();
+		System.out.println("Você digitou: " + xx);
+		
+		int yy;
+		yy = sc.nextInt();
+		System.out.println("Você digitou o número: " + yy);
+		
+		double zz;
+		zz = sc.nextDouble();
+		System.out.println("Você digitou o double: " + zz);
+		
+		char ww;
+		ww = sc.next().charAt(0);
+		System.out.println("Você digitou: " + ww);
+		
+		sc.close();
 		
 		
+	
 		
 		
 		
